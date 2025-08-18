@@ -1,7 +1,4 @@
-import com.sun.jdi.CharType;
 
-import java.io.CharArrayWriter;
-import java.nio.CharBuffer;
 
 public class StringtoPrimitive {
 
