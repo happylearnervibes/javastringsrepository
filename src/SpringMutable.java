@@ -15,7 +15,8 @@ public class SpringMutable {
         str1.deleteCharAt(0);
         str1.setLength(5);
         str1.reverse();
-        System.out.println(str1);
+       // System.out.println(str1 instanceof String);
+        System.out.println(str1.toString());
         // single thread handling envirnment
         // doesnot handle mutli thread
         StringBuilder str2 = new StringBuilder("mutable");
@@ -24,14 +25,20 @@ public class SpringMutable {
         str2.deleteCharAt(1);
         str2.setLength(4);
         str2.reverse();
-        System.out.println(str2);
+        System.out.println(str2.toString());
         // charArray writer class allows to wirte characters to buffer
-        // convert them to a string
+        // and convert them to a string
         CharArrayWriter cw = new CharArrayWriter();
         cw.write("hi");
         cw.write("how are you");
         String s = cw.toString();
         System.out.println(s);
+
+        CharArrayWriter cw1 = new CharArrayWriter();
+        cw1.write('f');
+        cw1.write('r');
+        String s1 = cw1.toString();
+        System.out.println(s1);
 
 
     }
